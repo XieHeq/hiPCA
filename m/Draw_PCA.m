@@ -132,7 +132,7 @@ load(['./PCA_results/PCA_result_all_',fsname,'_315.mat'])
 imax = 0;
 for i1 = 1:length(features)
     for i2 = 1:length(0.1:0.1:0.9)
-        for i3 = 1:length(0.6:0.1:0.9) %表示以0.6为起点,以0.9为终点,以0.1为步长的一维矩阵
+        for i3 = 1:length(0.6:0.1:0.9) 
 %             tmp = b_train_acc_all_F(i1,i2,i3)+b_test_acc_all_F(i1,i2,i3);
             tmp = (1-b_train_test_all(i1,i2,i3,9))*0.5+b_train_test_all(i1,i2,i3,10)*0.5; %1*9*4*12
 %             tmp = (1-b_train_test_all(i1,i2,i3,3))*0.4+b_train_test_all(i1,i2,i3,4)*0.6;
