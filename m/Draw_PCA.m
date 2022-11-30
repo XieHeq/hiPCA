@@ -1,7 +1,7 @@
 clear all
 close all
 %%
-cd D:\Ô­µçÄÔ\ÑÐÒ»ÏÂ
+cd ..
 
 %% add path
 addpath('./common_tool');
@@ -132,7 +132,7 @@ load(['./PCA_results/PCA_result_all_',fsname,'_315.mat'])
 imax = 0;
 for i1 = 1:length(features)
     for i2 = 1:length(0.1:0.1:0.9)
-        for i3 = 1:length(0.6:0.1:0.9) %±íÊ¾ÒÔ0.6ÎªÆðµã,ÒÔ0.9ÎªÖÕµã,ÒÔ0.1Îª²½³¤µÄÒ»Î¬¾ØÕó
+        for i3 = 1:length(0.6:0.1:0.9) %è¡¨ç¤ºä»¥0.6ä¸ºèµ·ç‚¹,ä»¥0.9ä¸ºç»ˆç‚¹,ä»¥0.1ä¸ºæ­¥é•¿çš„ä¸€ç»´çŸ©é˜µ
 %             tmp = b_train_acc_all_F(i1,i2,i3)+b_test_acc_all_F(i1,i2,i3);
             tmp = (1-b_train_test_all(i1,i2,i3,9))*0.5+b_train_test_all(i1,i2,i3,10)*0.5; %1*9*4*12
 %             tmp = (1-b_train_test_all(i1,i2,i3,3))*0.4+b_train_test_all(i1,i2,i3,4)*0.6;
