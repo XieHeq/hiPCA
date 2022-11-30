@@ -1,7 +1,7 @@
 clear all
 close all
 %%
-cd ..
+cd ./m
 
 %% add path
 addpath('./common_tool');
