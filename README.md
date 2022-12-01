@@ -1,1 +1,1 @@
-# PCA-model
+# hiPCA-model
